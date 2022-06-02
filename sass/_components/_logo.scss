@@ -1,0 +1,35 @@
+.logo-header {
+    display: block;
+    margin-right: 93px;
+    margin-bottom: 25px;
+
+    color: $title-text-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo-first-part {
+    color: $accent-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-footer {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    list-style: none;
+    text-decoration: none;
+
+    color: $main-background-color;
+    font-family: Raleway, sans-serif;
+}
