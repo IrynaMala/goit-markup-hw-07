@@ -1,11 +1,12 @@
-.page-header {
+.header {
     border-bottom: 1px solid $page-header-color;
     background: $main-background-color;
+
+    &__container {
+        display: flex;
+    }
 }
 
-.leader {
-    display: flex;
-}
 
 nav {
     display: flex;
@@ -17,7 +18,7 @@ nav {
     display: flex;
 }
 
-.site-nav__list {
+.site-nav__item {
     margin-right: 50px;
     list-style: none;
     text-decoration: none;
@@ -46,10 +47,6 @@ nav {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &.current {
-        position: relative;
-        color: $accent-color;
-    }
 
     &:hover,
     &:focus {
@@ -59,16 +56,21 @@ nav {
 
 }
 
-.current::after {
-    position: absolute;
-    display: inline-block;
-    content: " ";
-    bottom: 0;
-    left: 0;
-    Width: 100%;
-    Height: 4px;
-    background: $accent-color;
-    border-radius: 2px;
+.site-nav__link--current {
+    position: relative;
+    color: $accent-color;
+
+ &::after {
+        position: absolute;
+        display: inline-block;
+        content: " ";
+        bottom: 0;
+        left: 0;
+        Width: 100%;
+        Height: 4px;
+        background: $accent-color;
+        border-radius: 2px;
+    }
 }
 
 .auth-nav {
@@ -77,7 +79,7 @@ nav {
 
 }
 
-.auth-nav__list {
+.auth-nav__item {
     display: flex;
     align-items: center;
     margin-right: 50px;
@@ -91,7 +93,7 @@ nav {
     }
 }
 
-.page-header__button {
+.auth-nav__link {
     display: flex;
     align-items: center;
     color: $primary-text-color;

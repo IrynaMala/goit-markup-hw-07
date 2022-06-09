@@ -1,88 +1,69 @@
-.fifth-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.clients {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
 
-    &__clients {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+.clients__link {
+
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $symbol-color;
+
+    border: 1px solid;
+    border-color: $symbol-color;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus  {
+        border-color: $accent-color;
     }
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
-// .fifth-section__icon-list {
-//     display: flex;
-//     margin-right: 30px;
-//     fill: $symbol-color;
-
-//     &:last-child {
-//         margin-right: 0;
-//     }
-// }
-
-
-
-// .fifth-section__icon {
-//     width: 170px;
-//     height: 92px;
-//     border: 1px solid $symbol-color;
-//     border-radius: 4px;
-//     padding: 16px 32px;
-//     fill: $symbol-color;
-
-//     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//     &:hover,
-//     &:focus {
-//         fill: $accent-color;
-//         border: 1px solid $accent-color;
-//         border-radius: 4px;
-//     }
-
-// }
-
-
-.fifth-section__icon-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.clients__item {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid $symbol-color;
-    border-radius: 4px;
+    
     margin-right: 30px;
-    fill: $symbol-color;
-
+    
     &:last-child {
         margin-right: 0;
     }
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover ,
-    &:focus {
-       fill: $accent-color;
-       border: 1px solid $accent-color;
-       border-radius: 4px;
-     }
+    .clients__link:hover &,
+    .clients__link:focus & {
+       border-color: $accent-color;
+    }
+
+    
 }
 
 
 
-.fifth-section__icon {
+.clients__icon {
+    display: block;
     width: 106px;
     height: 60px;
     fill: $symbol-color;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .fifth-section__icon-list:hover &,
-    .fifth-section__icon-list:focus & {
-        fill: $accent-color;
-    }
 
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill:  $accent-color;
+    }
 }
